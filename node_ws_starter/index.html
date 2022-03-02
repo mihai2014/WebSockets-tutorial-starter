@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">        
+        <title>WebSocket demo</title>
+    </head>
+    <body>
+        <script src="comm.js"></script>
+
+        <section class="section">
+            <div class="container">
+            <h1 class="title">
+                WebSockets test
+            </h1>
+            <p class="subtitle">
+                http <strong>asyncron/duplex</strong> comm!
+            </p>
+            </div>
+        </section>
+
+        <section class="section">
+
+        <div class="columns">
+            <div class="column is-one-fifth">Clock</div>
+            <div class="column">
+                <div id="clock"></div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-one-fifth">Echo response (received)</div>
+            <div class="column">
+                <div id="response"></div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-one-fifth">Message (send)</div>
+            <div class="column">
+                <input type="text" id="send">
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-one-fifth">
+                <button id="send-message">Send</button>
+            </div>
+            <div class="column"></div>
+        </div>
+        </section>
+
+    </body>
+</html>
